@@ -111,10 +111,10 @@ Therefore the system is a continuously evolving network of mutual influence:
 
 Matter fleeing the expanding voids collides and flattens into sheet-like structures, which then collapse further into dense, interconnected Filaments. The intersections of these filaments form ultra-dense gravitational wells (Nodes), where massive galaxy clusters would form in the real universe
 
-# The mathematical Nuances:
+# The mathematical Nuance:
 
 The simulation tracks the evolution of the system by applying Newton's laws to an \(N\)-body system. The motion of any single particle \(i\) is determined by the cumulative gravitational pull of all other particles \(j\):
 
-
+$$
 \(\vec{a}_{i}=\frac{d^{2}\vec{r}_{i}}{dt^{2}}=G\sum _{j\ne i}^{N}\frac{m_{j}(\vec{r}_{j}-\vec{r}_{i})}{\left(|{}\vec{r}_{j}-\vec{r}_{i}|{}^{2}+\epsilon ^{2}\right)^{3/2}}\)
-
+$$
