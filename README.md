@@ -84,7 +84,25 @@ $$
 
 In the present implementation all particles have equal unit mass and $G=1$, so the dynamics are expressed in dimensionless units.
 
-The model therefore represents a closed, self-gravitating Newtonian system rather than a cosmological simulation.
+The model therefore represents a closed, self-gravitating Newtonian system rather than a cosmological simulation
+
+## Softening 
+The point particle Newtonian force diverges as two particles approach zero separation.
+
+Because the simulation uses finite timesteps and finite particle sampling, extremely close encounters can produce infinitely large accelerations and numerical instability.
+Therefore, a softening coefficient is introduced. 
+
+$$
+\mathbf a_i =
+G\sum_{j\ne i}
+m_j
+\frac{\mathbf r_j-\mathbf r_i}
+{\left(|\mathbf r_j-\mathbf r_i|^2+\epsilon^2\right)^{3/2}}.
+$$
+
+Here $\epsilon$ is a numerical regularization scale, not a modification to the physical gravitational law
+The choice of $\epsilon$ therefore introduces a resolution scale below which the simulation does not resolve the exact point-particle interaction.
+
 ---
 
 #  Initial Fluctuations:
