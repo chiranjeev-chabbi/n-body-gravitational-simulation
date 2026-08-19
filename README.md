@@ -22,15 +22,16 @@ Yet the underlying physics has not become more complicated.
 
 Every particle still obeys the same fundamental law:
 
-[
+$$
 \mathbf F = m\mathbf a
-]
+$$
 
 and, for gravity,
 
+$$
 -G\frac{m_i m_j}{r_{ij}^3}
-(\mathbf r_i-\mathbf r_j).
-
+(\mathbf r_i-\mathbf r_j)
+$$
 
 The complexity comes from **the number of interactions**, not from changing the fundamental law.
 
@@ -47,49 +48,52 @@ That is the central idea behind this project.
 The simulation begins with particles distributed via a normal distribution around an origin. This represents a highly overdense region of the early universe. Because the particles possess random initial velocities (thermal motion), they do not instantly collapse into a singular point, mimicking the kinetic pressure of the early cosmos.
 Consider (N) particles with positions
 
-[
+$$
 \mathbf r_1,\mathbf r_2,\ldots,\mathbf r_N
-]
+$$
 
 and masses
 
-[
+$$
 m_1,m_2,\ldots,m_N.
-]
+$$
 
 Take one particle (i).
 
 Every other particle (j) produces a gravitational force on it. The total force is therefore the vector sum
 
+$$
 \sum_{j\neq i}
 \mathbf F_{ij}.
-]
+$$
 
 Using Newtonian gravity,
 
+$$
 -Gm_i
 \sum_{j\neq i}
 m_j
 \frac{\mathbf r_i-\mathbf r_j}
 {|\mathbf r_i-\mathbf r_j|^3}
 }
-]
+$$
 
 and Newton's second law gives
 
-[
+$$
 m_i\mathbf a_i=\mathbf F_i.
 ]
 
 Therefore,
 
+$$
 -G
 \sum_{j\neq i}
 m_j
 \frac{\mathbf r_i-\mathbf r_j}
 {|\mathbf r_i-\mathbf r_j|^3}
 }
-]
+$$
 
 This is the mathematical heart of the simulation.
 
