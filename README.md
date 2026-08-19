@@ -75,14 +75,13 @@ $$
 m_j
 \frac{\mathbf r_i-\mathbf r_j}
 {|\mathbf r_i-\mathbf r_j|^3}
-}
 $$
 
 and Newton's second law gives
 
 $$
 m_i\mathbf a_i=\mathbf F_i.
-]
+$$
 
 Therefore,
 
@@ -92,10 +91,9 @@ $$
 m_j
 \frac{\mathbf r_i-\mathbf r_j}
 {|\mathbf r_i-\mathbf r_j|^3}
-}
 $$
 
-This is the mathematical heart of the simulation.
+This is the mathematical central idea of the simulation.
 
 There is no special rule saying that a particle should move toward a particular destination.
 
