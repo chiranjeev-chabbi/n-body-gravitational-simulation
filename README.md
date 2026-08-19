@@ -178,5 +178,5 @@ Matter fleeing the expanding voids collides and flattens into sheet like structu
 The simulation tracks the evolution of the system by applying Newton's laws to an \(N\)-body system. The motion of any single particle \(i\) is determined by the cumulative gravitational pull of all other particles \(j\):
 
 $$
-\(\vec{a}_{i}=\frac{d^{2}\vec{r}_{i}}{dt^{2}}=G\sum _{j\ne i}^{N}\frac{m_{j}(\vec{r}_{j}-\vec{r}_{i})}{\left(|{}\vec{r}_{j}-\vec{r}_{i}|{}^{2}+\epsilon ^{2}\right)^{3/2}}\)
+\\vec{a}_{i}=\frac{d^{2}\vec{r}_{i}}{dt^{2}}=G\sum _{j\ne i}^{N}\frac{m_{j}(\vec{r}_{j}-\vec{r}_{i})}{\left(|{}\vec{r}_{j}-\vec{r}_{i}|{}^{2}+\epsilon ^{2}\right)^{3/2}}\
 $$
