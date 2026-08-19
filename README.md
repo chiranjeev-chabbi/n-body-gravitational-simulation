@@ -5,20 +5,12 @@ If the early universe had been perfectly smooth and uniform, gravity would have 
 ---
 
 ### Why an N Body Simulation?
-The question to begin with forms the central idea of the simulation. 
+The question we begin with, forms the heart of the simulation. 
 "If we know how gravity acts between individual objects, what happens when there are many of them?"
 
-For two bodies, Newton's law gives a clean and predictable trajectory. With three bodies, the problem already becomes substantially more complicated. With hundreds or thousands of interacting bodies, there is generally no simple closed-form solution.
+For two bodies, Newton's law gives a straightforward and predictable trajectory. With three bodies, the problem already becomes substantially more complicated. With hundreds or thousands of interacting bodies, there is generally no simple closed form solution.
 
-Yet the underlying physics has not become more complicated.
-
-Every particle still obeys the same fundamental law:
-
-$$
-\mathbf F = m\mathbf a
-$$
-
-Yet the underlying physics has not become more complicated.
+Yet the underlying physics does not become more complicated.
 
 Every particle still obeys the same fundamental law:
 
@@ -33,19 +25,19 @@ $$
 (\mathbf r_i-\mathbf r_j)
 $$
 
-The complexity comes from **the number of interactions**, not from changing the fundamental law.
+The complexity comes from **the number of interactions**, and not from changing the fundamental law.
 
 An N-body simulation is therefore an experiment in emergence:
 
 > **How can complicated collective behaviour emerge from nothing more than simple pairwise interactions?**
 
-That is the central idea behind this project.
+That is the central idea behind this simulation.
 
 ---
 
 #  Initial Fluctuations:
 
-The simulation begins with particles distributed via a normal distribution around an origin. This represents a highly overdense region of the early universe. Because the particles possess random initial velocities (thermal motion), they do not instantly collapse into a singular point, mimicking the kinetic pressure of the early cosmos.
+The simulation begins with particles distributed via a normal distribution around an origin. This represents a highly overdense region of the early universe. Because the particles possess random initial positions and velocities (thermal motion), they do not instantly collapse into a singular point, mimicking the kinetic pressure of the early cosmos.
 Consider (N) particles with positions
 
 $$
@@ -93,7 +85,7 @@ m_j
 {|\mathbf r_i-\mathbf r_j|^3}
 $$
 
-This is the mathematical central idea of the simulation.
+This mathematically, lays the foundation of the simulation.
 
 There is no special rule saying that a particle should move toward a particular destination.
 
@@ -103,13 +95,13 @@ Its trajectory is continually reconstructed from the gravitational field generat
 
 ## Void formation:
 
-As denser regions gain mass, their gravitational pull grows exponentially. They strip matter away from neighboring areas completely. This creates massive, empty regions known as Voids. The physics transitions into a highly chaotic, non-linear regime where analytical math fails, and computer simulation becomes the only way to predict the outcome
+As denser regions gain mass, their gravitational pull grows exponentially. They attract and coagulate matter away from neighboring areas completely. This creates massive, empty regions known as Voids. The physics transitions into a highly chaotic, non linear system where analytical math is insufficient, and computer simulation becomes the only way to predict the outcome
 
 Therefore the system is a continuously evolving network of mutual influence:
 
 ## Filaments and nodes:
 
-Matter fleeing the expanding voids collides and flattens into sheet-like structures, which then collapse further into dense, interconnected Filaments. The intersections of these filaments form ultra-dense gravitational wells (Nodes), where massive galaxy clusters would form in the real universe
+Matter fleeing the expanding voids collides and flattens into sheet like structures, which then collapse further into dense, interconnected Filaments. The intersections of these filaments form highly dense gravitational wells (Nodes), where massive galaxy clusters would form in the real universe
 
 # The mathematical Nuance:
 
